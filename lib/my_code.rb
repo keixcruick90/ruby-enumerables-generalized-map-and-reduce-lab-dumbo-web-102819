@@ -17,8 +17,8 @@ def reduce(k, sp=nil)
     accum = k[0]
     i = 1
   end
-  while i < s.length
-    accum = yield(accum, s[i])
+  while i < k.length
+    accum = yield(accum, k[i])
     i += 1
   end
   accum
